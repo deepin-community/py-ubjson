@@ -1,0 +1,85 @@
+py-ubjson (0.16.1-1) unstable; urgency=low
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Michael Fladischer ]
+  * New upstream release.
+  * Bump debhelper version to 13.
+  * Bump Standards-Version to 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Use uscan version 4.
+
+ -- Michael Fladischer <fladi@debian.org>  Thu, 10 Dec 2020 10:10:23 +0100
+
+py-ubjson (0.14.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop Python 2 support (Closes: #938292).
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 11 Oct 2019 09:35:20 +0200
+
+py-ubjson (0.14.0-1) unstable; urgency=low
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Michael Fladischer ]
+  * New upstream release.
+  * Add debian/gbp.conf.
+  * Bump debhelper version to 12.
+  * Bump Standards-Version to 4.4.0.
+  * Add myself to uploaders.
+
+ -- Michael Fladischer <fladi@debian.org>  Tue, 23 Jul 2019 12:46:46 +0200
+
+py-ubjson (0.12.0-1) unstable; urgency=low
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Michael Fladischer <fladi@debian.org>  Mon, 27 Aug 2018 13:41:30 +0200
+
+py-ubjson (0.12.0-1~exp1) experimental; urgency=low
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Michael Fladischer ]
+  * New upstream release (Closes: #902762).
+  * Clean up files in py_ubjson.egg-info/ to allow two builds in a row.
+  * Bump debhelper compatibility and version to 11.
+  * Bump Standards-Version to 4.2.0.
+  * Enable autopkgtest-pkg-python testsuite.
+  * Run wrap-and-sort -bast to reduce diff size of future changes.
+  * Install README.md for both binary packages.
+
+ -- Michael Fladischer <fladi@debian.org>  Thu, 23 Aug 2018 19:50:10 +0200
+
+py-ubjson (0.8.5-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add cython3 to build-depends so extension compilation succeeds
+
+ -- Scott Kitterman <scott@kitterman.com>  Thu, 29 Jun 2017 15:10:22 -0400
+
+py-ubjson (0.8.5-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #832466)
+
+ -- Orestis Ioannou <orestis@oioannou.com>  Mon, 25 Jul 2016 00:21:10 +0200

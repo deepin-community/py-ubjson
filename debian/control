@@ -1,0 +1,32 @@
+Source: py-ubjson
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Orestis Ioannou <orestis@oioannou.com>,
+ Michael Fladischer <fladi@debian.org>,
+Build-Depends:
+ cython3,
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-all-dev,
+ python3-setuptools,
+Standards-Version: 4.5.1
+Homepage: https://github.com/Iotic-Labs/py-ubjson
+Vcs-Git: https://salsa.debian.org/python-team/packages/py-ubjson.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/py-ubjson
+Testsuite: autopkgtest-pkg-python
+Rules-Requires-Root: no
+
+Package: python3-ubjson
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+Description: Universal Binary JSON encoder/decoder for Python 3
+ Universal Binary JSON encoder/decoder based on the draft-12 specification.
+ It’s meant to behave very much like Python’s built-in JSON module
+ .
+ This is the Python 3 package.

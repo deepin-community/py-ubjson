@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+export PYBUILD_TEST_ARGS=test/
+export PYBUILD_NAME=ubjson
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
